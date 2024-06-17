@@ -1,0 +1,157 @@
+:root {
+  /* color */
+  --color-black: #1b242f;
+  --color-white: #fff;
+  --color-grey: #f5f5f5;
+  --color-blue: #04c2c9;
+  --color-green: #00a1a7;
+}
+
+/* body */
+body {
+  height: 100vh;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+}
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--color-black);
+  margin: 0;
+}
+.h1_bar {
+  justify-content: center;
+  background-color: var(--color-black);
+  height: 4px;
+  width: 120px;
+  margin: 5px auto 50px auto;
+}
+h4 {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 12px;
+  margin-bottom: 50px;
+}
+
+/* header */
+header {
+}
+header ul {
+  height: 100px;
+  width: 100%;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  position: fixed;
+  margin: 0;
+  top: 0;
+}
+header ul .inner {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  /* width: 1100px; */
+}
+
+header ul li {
+  margin: 5px;
+  border: 1px solid var(--color-white);
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 300ms ease;
+  margin-top: 0px;
+}
+header ul li:hover {
+  transform: scale(1.1);
+  color: var();
+}
+header ul li::marker {
+  color: transparent;
+}
+
+/* home */
+.home .inner {
+  height: 800px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 30px;
+  /* padding-bottom: 50px; */
+  color: var(--color-black);
+}
+.home .profile_img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 200px 0 50px 0;
+}
+
+/* about */
+.about {
+  background-color: var(--color-grey);
+  padding: 150px 0;
+}
+
+/* skills */
+.skills {
+  background-color: var(--color-white);
+  padding: 100px 0;
+}
+.skills .inner .container {
+  display: flex;
+  margin: 10px;
+}
+.skills .inner .container .bar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  font-weight: 700;
+  background-color: var(--color-blue);
+  width: 110px;
+  height: 50px;
+
+}
+.skills .inner .container .bar2_html {
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to right, #00a1a7 70%, #eee 30% );
+}
+.skills .inner .container .bar2_css {
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to right, #00a1a7 60%, #eee 40% );
+}
+.skills .inner .container .bar2_js {
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to right, #00a1a7 50%, #eee 50% );
+}
+
+/* Portfolio */
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black);
+  height: 200px;
+  color: var(--color-white);
+}
+
