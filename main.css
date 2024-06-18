@@ -154,4 +154,12 @@ header ul li::marker {
   height: 200px;
   color: var(--color-white);
 }
+.footer .inner img {
+  display: flex;
+  margin: 10px auto;
+  width: 50px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  border: solid 2px var(--color-white);
+}
 
