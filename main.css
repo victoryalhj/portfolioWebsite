@@ -246,6 +246,7 @@ animation: slideOpposite 1.5s ;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin: 10px;
 }
 /* footer */
 .footer {
