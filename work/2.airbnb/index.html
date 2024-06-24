@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+ 
+  <title>Clone coding</title>
+</head>
+<body>
+  <header>
+    <img id="logo" src="./image/Airbnb-Logo.png" alt="Fastcampus logo">
+    <div id="little-search">
+      <button class="little-search_button">Where to</button><span class="divider"></span>
+      <button class="little-search_button">When</button><span class="divider"></span>
+      <button class="little-search_button">Who</button>
+      <div id="magnifying-glass-wrapper">
+        <img id="magnifying-glass-icon" src="./image/Magnifying_glass_icon.svg" alt="Search-icon">
+      </div>
+    </div>
+    <div id="header-right-section">
+      <div id="do-airbnb">
+        Airbnb your home
+      </div>
+      <div id="profile-section">
+        <img width="16" src="./image/list.svg" alt="list icon">
+        <img width="30" src="./image/user-circle.svg" alt="user circle icon">
+      </div>
+    </div>
+  </header>
+  <div id="category-bar">
+    <button class="category-button" id="active-category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>National parks</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Amazing view</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Amazing pools</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Tropical</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Castles</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Beachfront</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Cabin</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Farms</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Treehouses</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Vinyards</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Tiny homes</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Design</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Island</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Camping</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Lake</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Lakefront</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Mansions</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>A-frames</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Surfing</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Historical homes</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Cave</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Rooms</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Boats</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Earth homes</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./image/airplane_black.svg" alt="airplane icon">
+      <div>Play</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./image/armchair.svg" alt="armchair icon">
+      <img class="active-img" src="./image/armchair_black.svg" alt="armchair icon">
+      <div>Top of the world</div>
+    </button>
+  </div>
+  <main>
+    <div id="place-items-wrapper">
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img class src="image/home01.jpg" alt="home1">
+          <img class="heart-icon" src="./image/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">London, UK</div>
+            <div>Individual Host</div>
+            <div>29 Jul - 3 Aug</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+        <img src="./image/home02.jpg" alt="home02">
+        <img class="heart-icon" src="./image/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">Kent, UK</div>
+          <div>Professional Host</div>
+          <div>6-11 May</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+        <img src="./image/home03.jpg" alt="home03">
+        <img class="heart-icon" src="./image/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">Bedford, UK</div>
+          <div>Professional Host</div>
+          <div>21-26 May</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+        <img src="./image/home04.jpg" alt="home04">
+        <img class="heart-icon" src="./image/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">Rome, Italy</div>
+          <div>Individual Host</div>
+          <div>29 Jun - 4 Jul</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+        <img src="./image/home05.jpg" alt="home05">
+        <img class="heart-icon" src="./image/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">Ubud, Indonesia</div>
+          <div>Individual Host</div>
+          <div>1-6 May</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+        <img src="./image/home06.jpg" alt="home06">
+        <img class="heart-icon" src="./image/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">London, UK</div>
+          <div>Professional Host</div>
+          <div>20-25 May</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+        <img src="./image/home07.jpg" alt="home07">
+        <img class="heart-icon" src="./image/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">Wargrave, UK</div>
+          <div>Professional Host</div>
+          <div>l-6 May</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+        <img src="./image/home08.jpg" alt="home08">
+        <img class="heart-icon" src="./image/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">London, UK</div>
+          <div>Individual Host</div>
+          <div>21-27 May</div>
+        </div>
+      </div>
+    </div> 
+  </main>
+  <button id="floating-map-button">
+    <span>Show map</span>
+    <img width="16" src="./image/map.svg" alt="map-icon">
+  </button>
+</body>
+
+<script>
+  document.querySelectorAll('.category-button').forEach(button => {
+    button.addEventListener("click", event => {
+      document.querySelector("#active-category-button").removeAttribute('id')
+      
+      button.setAttribute('id', 'active-category-button')
+    })
+  })
+</script>
+
+</html>
