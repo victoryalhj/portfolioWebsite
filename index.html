@@ -1,120 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website</title>
-    <link rel="stylesheet" href="./main.css" />
-    <script defer src="./main.js"></script>
-  </head>
-  <body>
-    <!-- header -->
-    <header>
-        <ul>
-          <div class="inner">
-            <li><a href="./">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <!-- <li><a href="#contact">CONTACT</a></li> -->
-        </div>
-        </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Portfolio Website</title>
+</head>
+<body>
 
-    </header>
+<!-- Nav -->
+  <nav class="navTop">
+    <button><a href="./">HOME</a></button>
+    <button><a href="#about">ABOUT</a></button>
+    <button><a href="#skills">SKILLS</a></button>
+    <button><a href="#portfolio">PORTFOLIO</a></button>
+  </nav>
 
-    <!-- home -->
-    <div class="home">
-      <div class="inner">
-        <img src="./image/Profile_image.jpg" alt="profile_image" class="profile_img">
-        <!-- slide -->
-        <div class="slideOpposite">Hello, I'm <span style="color:#04c2c9; font-weight: 700;">HEEJUNG LEE</span>.</br>
-          <br>I want to be a web developer, so I'm currently studying coding.</br>
-        </div>
-              </div>
+<!-- Home -->
+  <div class="home">
+    <img src="./img/Profile_image.jpg" alt="Profile-Image">
+    <p>Hello, I'm Heejung Lee</p>
+    <p>I want to be a web developer, so I'm currently studying coding.</p>
+  </div>
+
+<!-- About -->
+  <div class="about" id="about">
+    <p class="title">ABOUT</p>
+    <p class="question">Why do you want to be a developer?</p>
+    <p class="answer">I find the job of a developer, which allows for continuous learning and <span style="color:#04c2c9; font-weight:700;">Self-Development</span>, to be very impressive.
+    I also want to have my own skills that I can use for a lifetime, <span style="color:#04c2c9; font-weight:700">Lifelong Skills</span>.</p>
+    
+    <p class="question">Why did you choose FAC?</p>
+    <p class="answer">FAC's <span style="color:#04c2c9; font-weight:700;">curriculum</span> is impressive.
+    They offer <span style="color:#04c2c9; font-weight:700;">meetups</span> for beginners and provide opportunities to collaborate on projects with others
+    through their classes. It was also appealing to participate as a mentor in meetups while taking part
+    in the FAC program. I also hope to assist beginners who want to learn coding in the future</p>
+  </div>
+
+<!-- Skills -->
+  <div class="skills" id="skills">
+    <p class="title">SKILLS</p>
+    <div class="container">
+      <div class="bar1">HTML</div>
+      <div class="bar2_html"></div>
     </div>
+    <div class="container">
+      <div class="bar1">CSS</div>
+      <div class="bar2_css"></div>
+    </div>
+    <div class="container">
+      <div class="bar1">Javascript</div>
+      <div class="bar2_js"></div>
+    </div>
+  </div>
 
-    <!-- about -->
-     <div id="about" class="about">
-       <div class="inner">
-        <h1>ABOUT</h1>
-        <div class="h1_bar"></div>
-        <h2>Why do you want to be a developer?</h2>
-        <h4>
-          <br>I find the job of a developer, which allows for continuous learning and <span style="color:#04c2c9; font-weight:700;">Self-Development</span>, to be very impressive.</br>
-          <br>I also want to have my own skills that I can use for a lifetime, <span style="color:#04c2c9; font-weight:700">Lifelong Skills</span>.</br>
-        </h4>
-        <h2>Why did you choose FAC?</h2>
-        <h4>
-          <br>FAC's <span style="color:#04c2c9; font-weight:700;">curriculum</span> is impressive.</br>
-          <br>They offer <span style="color:#04c2c9; font-weight:700;">meetups</span> for beginners and provide opportunities to collaborate on projects with others</br>
-          <br>through their classes. It was also appealing to participate as a mentor in meetups while taking part</br>
-          <br>in the FAC program. I also hope to assist beginners who want to learn coding in the future</br>
-        </h4>   
-      </div>
-     </div>
+<!-- Portfolio -->
+  <div class="portfolio" id="portfolio">
+    <p class="title">PORTFOLIO</p>
+    <a href="https://ninemovienew.netlify.app">
+      <img src="./img/MovieAPI.jpg" alt="MovieAPI">
+    </a>
+    <a href="https://ninemovienew.netlify.app">
+      <button class="button">Go To Website</button>
+    </a>
+    <a href="https://github.com/victoryalhj/Group-Project_Movie-API">
+      <button class="button">Go To Github</button>
+    </a>
+  </div>
 
-     <!-- skills -->
-      <div id="skills" class="skills">
-        <div class="inner">
-          <h1>SKILLS</h1>
-          <div class="h1_bar"></div>
-          <div class="container">
-            <div class="bar1">HTML</div>
-            <div class="bar2_html"></div>
-          </div>
-          <div class="container">
-            <div class="bar1">CSS</div>
-            <div class="bar2_css"></div>
-          </div>
-          <div class="container">
-            <div class="bar1">Javascript</div>
-            <div class="bar2_js"></div>
-          </div>
-        </div>
-      </div>
+<!-- footer -->
+  <div class="footer">
+    <a href="https://github.com/victoryalhj"><img src="./img/git-hub.png" alt="git-hub"></a>
+    <span class="myName">HEEJUNG LEE @2024</span>
+  </div>
 
-      <!-- Portfolio -->
-        <div id="portfolio" class="portfolio">
-          <div class="inner">
-            <h1>PORTFOLIO</h1>
-            <div class="h1_bar"></div>
-            <div class="work">
-              <div class="portfolio_1">
-                <a href="https://ninemovienew.netlify.app">
-                  <img src="./image/MovieAPI.jpg" alt="MovieAPI">
-                </a>
-                <a href="https://ninemovienew.netlify.app" class="button-link">
-                  <button class="button">Go To Website</button>
-                </a>
-                <a href="https://github.com/victoryalhj/Group-Project_Movie-API" class="button-link">
-                  <button class="button">Go To Github</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      <!-- Contact -->
-        <!-- <div id="contact" class="contact">
-          <div class="inner">
-            <h1>CONTACT</h1>
-            <div class="h1_bar"></div>
-            <h2>Have a question or want to work together?</h2>
-            <div class="box">
-              <input placeholder="Name"  type="text">
-              <input placeholder="Enter Email"  type="text">
-              <input class="message" placeholder="Your Message"  type="text">
-              <div class="submit_btn">SUBMIT</div>
-            </div>
-          </div>
-        </div> -->
-
-      <!-- footer -->
-       <div class="footer">
-        <div class="inner">
-          <a href="https://github.com/victoryalhj"><img src="./image/git-hub.png" alt="git-hub"></a>
-          <span class="my_name">HEEJUNG LEE ©2024</span>
-        </div>
-      </div>
-  </body>
+</body>
 </html>
