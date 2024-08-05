@@ -1,10 +1,18 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Raleway;
+}
 /* Nav */
 .navTop {
   background-color: #1b242f;
   height: 100px;
+  width: 100%;
   display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
+  z-index: 9;
 }
 .navTop button {
   height: 50px;
@@ -13,6 +21,7 @@
   background-color: #1b242f;
   border: 2px solid #fff;
 }
+
 .navTop button a {
   color: #fff;
   font-size: 17px;
@@ -156,4 +165,25 @@
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid #fff;
+}
+
+@media (max-width:992px) {
+  .navTop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .navTop button {
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    
+  }
+  .navTop button a {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media (max-width:600px) {
+
 }
