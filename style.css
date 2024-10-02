@@ -148,6 +148,12 @@ body {
   margin: 10px;
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
+.project-button {
+  text-align: center;
+}
 
 /* footer */
 .footer {
