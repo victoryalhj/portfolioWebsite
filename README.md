@@ -1,7 +1,7 @@
 # WEBSITE
 
 <div align=center>
-<img src="./image/Website.png" alt="Website" width="600px"/>
+<img src="./image/Portfolio.jpg" alt="Website" width="600px"/>
 
 ### [ Website ](https://victoryalhj.netlify.app/)
 </div>

@@ -15,21 +15,23 @@
     <button><a href="#about">ABOUT</a></button>
     <button><a href="#skills">SKILLS</a></button>
     <button><a href="#portfolio">PORTFOLIO</a></button>
+    <button><a href="#footer">GIT HUB</a></button>
   </nav>
 
 <!-- Home -->
   <div class="home">
-    <img src="./image/Profile_image.jpg" alt="Profile-Image">
-    <p>Hello, I'm <span style="color:#04c2c9; font-weight:700;">Heejung Lee</span></p>
-    <p>I want to be a web developer, so I'm currently studying coding.</p>
-  </div>
-
-<!-- About -->
-  <div class="about" id="about">
-    <p class="title">ABOUT</p>
-    <p class="question">Why do you want to be a developer?</p>
-    <p class="answer">I find the job of a developer, which allows for continuous learning and <span style="color:#04c2c9; font-weight:700;">Self-Development</span>, to be very impressive.
-    I also want to have my own skills that I can use for a lifetime, <span style="color:#04c2c9; font-weight:700">Lifelong Skills</span>.</p>
+    <h1>HEEJUNG LEE</h1>
+    <h2>Software Developer</h2>
+    <h3>I design and build user-centered web experiences that are both intuitive and impactful.</h3>
+    <p class="answer">
+      I’m an aspiring web developer passionate about creating engaging and accessible digital experiences.
+      With over five years of experience in e-commerce, I learned how to understand customer needs and solve problems through data, 
+      which shaped my ability to think logically and systematically.
+      My curiosity about how digital platforms are built inspired me to start coding,
+      and since then I’ve developed projects like a movie search website, 
+      a simple game, and a portfolio site. Each project has deepened my skills and reinforced my passion for building.
+      What excites me most about becoming a developer is the opportunity for continuous learning.
+      I thrive on tackling challenges, growing through collaboration, and contributing to projects that make a meaningful impact.</P>
   </div>
 
 <!-- Skills -->
@@ -47,42 +49,97 @@
       <div class="bar1">Javascript</div>
       <div class="bar2_js"></div>
     </div>
+    <div class="container">
+      <div class="bar1">React</div>
+      <div class="bar2_react"></div>
+    </div>
   </div>
 
 <!-- Portfolio -->
   <div class="portfolio" id="portfolio">
-    <p class="title">PORTFOLIO</p>
-      <div class="project1">
-      <a href="https://ninemovienew.netlify.app">
-        <img src="./image/MovieAPI.jpg" alt="MovieAPI">
-      </a>
-      <div class="project-button">
-        <a href="https://ninemovienew.netlify.app">
-          <button class="button">Go To Website</button>
-        </a>
-        <a href="https://github.com/victoryalhj/Group-Project_Movie-API">
-          <button class="button">Go To Github</button>
-        </a>
+    <p class="title">MY WORK</p>
+    <div class="section-divide">
+      <div class="project"
+           data-title="NINE MOVIE" 
+           data-tech="Tech Stack: Javascript, HTML, CSS" 
+           data-link="https://ninemovienew.netlify.app/"
+           data-description="A 1-week sprint (15–24 July 2024) with a daily scrum at 12 PM. Team members are assigned features: search, slideshow, content details with YouTube, and favorites using TMDB and YouTube APIs.">
+        <div class="project-image">
+          <img src="./image/MovieAPI.jpg" alt="">
+        </div>
+        <div class="portfolio-title">
+          <p class="project-title">NINE MOVIE</p>
+          <p>Javascript</p>
+        </div>
       </div>
-    </div> 
-    <!-- <div class="project2">
-      <a href="https://molegameproject.netlify.app/">
-        <img src="./image/MarioGame.png" alt="MarioGame">
-      </a>
-      <a href="https://molegameproject.netlify.app/">
-        <button class="button">Go To Website</button>
-      </a>
-      <a href="https://github.com/victoryalhj/Game-project">
-        <button class="button">Go To Github</button>
-      </a>
-    </div>  -->
+
+      <div class="project"
+           data-title="TODO LIST"
+           data-tech="Tech Stack: Javascript, HTML, CSS"
+           data-link="https://todolistrenew.netlify.app/"
+           data-description="A JavaScript-based to-do list application featuring task addition, deletion, undo functionality, and filtering by all, in-progress, and completed states.  ">
+        <div class="project-image">
+          <img src="./image/todoList.jpg" alt="">
+        </div>
+        <div class="portfolio-title">
+          <p class="project-title">TODO LIST</p>
+          <p>Javascript</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divide">
+      <div class="project"
+           data-title="UP & DOWN GAME" 
+           data-tech="Javascript" 
+           data-link="https://numberguessgame2.netlify.app/"
+           data-description="A simple Up & Down guessing game when the uer tries to guess a randomly generated number between 1 and 100 within limited attempts">
+        <div class="project-image">
+          <img src="./image/upandDownGame.jpg" alt="">
+        </div>
+        <div class="portfolio-title">
+          <p class="project-title">UP & DOWN GAME</p>
+          <p>Javascript</p>
+        </div>
+      </div>
+
+      <div class="project" 
+           data-title="Mario Game" 
+           data-tech="Javascript" 
+           data-link="https://newmariogame.netlify.app/"
+           data-description="A whack-a-mole inspired browser game with rules, levels, and bonus mechanics. Built using HTML, CSS, and Vanilla JavaScript.">
+        <div class="project-image">
+          <img src="./image/MarioProject.jpg" alt="">
+        </div>
+        <div class="portfolio-title">
+          <p class="project-title">Mario Game</p>
+          <p>Javascript</p>
+        </div>
+      </div>
+    </div>
   </div>
 
+<!-- modal -->
+ <div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-tech"></p>
+    <p id="modal-description"></p>
+    <div class="modal-actions">
+      <button id="visit-btn">VIEW SITE</button>
+    </div>
+  </div>
+</div>
+
+
+
 <!-- footer -->
-  <div class="footer">
+  <div class="footer" id="footer">
     <a href="https://github.com/victoryalhj"><img src="./image/git-hub.png" alt="git-hub"></a>
     <span class="myName">HEEJUNG LEE @2024</span>
   </div>
 
+<script src="./main.js"></script>
 </body>
 </html>
